@@ -102,26 +102,39 @@ body{
     border: 1px solid #dbdbdb;
     border-radius: 3px;
     display: flex;
-    align-items: center;
-    padding-left: 23px;
+    /* align-items: center; */
+    padding-left: 18px;
     overflow-x: hidden;
     position: relative;
 }
   
-.story {
-    width: 56px;
-    margin-right: 24px;
-}
-  
-.story p {
-    text-align: center;
-    margin-top: 6px;
+.story{
+    width: 66px;
+    height: 86px;
+    margin-right: 14px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
-.story img{
+.background {
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+
+.imagem-story{
     width: 56px;
     height: 56px;
     border-radius: 28px;
+    margin: 5px;
+    z-index: 1;
 }
 
 .seta{
@@ -130,6 +143,7 @@ body{
     right:9px;
     font-size: 26px;
     color: #FFFFFF;
+    z-index: 100;
 }
 
 .conteudos{
@@ -215,7 +229,7 @@ video{
 /* define as dimensões da parte de curtidas e liga o display flex em coluna para mostrar os ícones
 em cima e as curtidas embaixo */
 .curtidas{
-    height: 76px;
+    /* height: 176px; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -231,6 +245,7 @@ o último ícone mais à direita */
 .icones-curtida{
     display: flex;
     justify-content: space-between;
+    margin-top: 14px;
 }
 
 /* define a margem direita do ícone mais à direita */
@@ -251,6 +266,7 @@ o último ícone mais à direita */
 /* liga o flex na div de curtido-por para mostrar o conteúdo em linha */
 .curtido-por{
     display: flex;
+    margin-top: 14px;
 }
 
 /* define a margem do parágrafo */
@@ -270,6 +286,83 @@ o último ícone mais à direita */
     height: 20px;
     border-radius: 10px;
     margin-left: 17px;
+}
+
+/* Define as prorpeidades dos comentários */
+.comentarios{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Define as propriedades de cada comentário individual */
+.comentario{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 18px;
+}
+
+/* Cria a margem esquerda da frase 'há x horas' */
+.tempo_de_postagem{
+    margin-left: 18px;
+}
+
+/* Cria a margem direita dos ícones de comentário */
+.comentario ion-icon{
+    margin-right: 18px;
+    font-size: 14px;
+}
+
+/* Cria espaçamento entre o nome da pessoa e o texto */
+.comentarios span{
+    margin-right: 1px;
+}
+
+/* Define o separador horizontal */
+.separador-horizontal{
+    width: 100%;
+    background-color: #DBDBDB;
+    height: 1px;
+    margin-bottom: 12px;
+}
+
+/* Define a barra de comentar */
+.comentar{
+    margin-left: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding-right: 18px;
+}
+
+/* Alinha o emoji e a caixa de comentário */
+.emojiecomentar{
+    display: flex;
+    align-items: center;
+}
+
+/* Retira a borda das caixas de comentário e dá uma margem com relação ao emoji */
+input{
+    border:none;
+    margin-left: 15px;
+}
+
+/* Remove o destaque da caixa de comentário quando clicamos em cima dela */
+input:focus{
+    outline: none;
+}
+
+/* retira as bordas do botão, define sua cor e define a transição de cor */
+button{
+    border:none;
+    background-color: inherit;
+    color: #B2DFFC;
+    transition: color 300ms;
+}
+
+/* muda a cor quando o mouse é colocado em cima */
+button:hover{
+    color: #0095F6;
 }
 
 .barra-lateral{
@@ -458,6 +551,9 @@ o último ícone mais à direita */
         font-size: 20px;
     }
 
-    
+    /* Cria um padding entre o último conteúdo e a barra mobile */
+    .ultimo{
+        padding-bottom: 54px;
+    }
 
 }
