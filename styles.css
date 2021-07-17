@@ -95,26 +95,26 @@ body{
     width: 935px;
 }
 
-.stories{
+.stories {
     height: 118px;
     width: 614px;
     margin: 34px 0 24px 0;
-    border: 1px solid #DBDBDB;
+    border: 1px solid #dbdbdb;
     border-radius: 3px;
     display: flex;
     align-items: center;
     padding-left: 23px;
     overflow-x: hidden;
-    position:relative;
+    position: relative;
 }
-
-.story{
+  
+.story {
     width: 56px;
     margin-right: 24px;
 }
-
-.story p{
-    text-align:center;
+  
+.story p {
+    text-align: center;
     margin-top: 6px;
 }
 
@@ -129,7 +129,7 @@ body{
     top:46px;
     right:9px;
     font-size: 26px;
-    background: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .conteudos{
@@ -157,6 +157,11 @@ body{
     border: 1px solid #DBDBDB;
     border-radius: 3px;
     width: 614px;
+}
+
+video{
+    height: 612px;
+    width: 612px;
 }
 
 /* Dimensões do título de cada conteúdo */
@@ -197,7 +202,7 @@ body{
 .corpo-conteudo{
     height: 612px;
     width: 612px;
-    background-color: magenta;
+    background-color: black;
 }
 
 /* Faz a imagem do conteúdo ocupar toda a extensão reservada para ela */
@@ -299,12 +304,14 @@ o último ícone mais à direita */
     font-weight: 400;
 }
 
-
 /* Cria espaçamento entre as divs da div sugestoes*/
 .sugestoes div{
     margin-bottom: 8px;
 }
 
+.sugestoes{
+    margin-bottom: 25px;
+}
 
 /* Escreve 'sugestões para você' com a fonte e espaçamento correto */
 .sugestoes-titulo{
@@ -347,6 +354,12 @@ o último ícone mais à direita */
     color: #8E8E8E;
 }
 
+.informacoes{
+    margin-bottom: 18px;
+    color: #C7C7C7;
+    font-size: 11px;
+}
+
 @media (max-width: 935px){
 
     .icones-topo{
@@ -381,6 +394,10 @@ o último ícone mais à direita */
         width: 100vw;
         justify-content: space-between;
         border-bottom: 1px solid #DBDBDB;
+    }
+
+    .icones-direita ion-icon{
+        margin-right: 22px;
     }
 
     .seta{
@@ -420,5 +437,27 @@ o último ícone mais à direita */
         width: 100vw;
         border-bottom: 1px solid #DBDBDB;
     }
+
+    video{
+        width: 100vw;
+    }
+
+    .barra-mobile{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom:0;
+        left:0;
+        height: 54px;
+        width: 100vw;
+        align-items:center;
+        border-top: 1px solid #DBDBDB;
+        padding-left: 21.75px;
+        padding-right: 21.75px;
+        background-color: #FFFFFF;
+        font-size: 20px;
+    }
+
+    
 
 }
