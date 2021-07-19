@@ -102,7 +102,6 @@ body{
     border: 1px solid #dbdbdb;
     border-radius: 3px;
     display: flex;
-    /* align-items: center; */
     padding-left: 18px;
     overflow-x: hidden;
     position: relative;
@@ -118,6 +117,13 @@ body{
     align-items: center;
     justify-content: space-between;
     position: relative;
+}
+
+.story p{
+    width: 78px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .background {
@@ -147,7 +153,6 @@ body{
 }
 
 .conteudos{
-    height: 749px;
     width: 614px;
 }
 
@@ -399,7 +404,7 @@ button:hover{
 
 /* Cria espaçamento entre as divs da div sugestoes*/
 .sugestoes div{
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .sugestoes{
@@ -414,9 +419,32 @@ button:hover{
     margin-bottom: 18px;
 }
 
+.sugestoesevertudo{
+    display: flex;
+    align-items: center;
+    width: 292px;
+    justify-content: space-between;
+}
+
 /* display para o texto ficar ao lado da foto */
 .fotonomesegue{
     display: flex;
+    width: 292px;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+}
+
+.lado-esquerdonomesegue{
+    display: flex;
+}
+
+.blue{
+    color: #139EF2;
+}
+
+.seguir{
+    margin-bottom: 27px;
 }
 
 /* dimensão das fotos da caixa de sugestões */
@@ -430,6 +458,11 @@ button:hover{
 /* espaçamento entre o nick e quais pessoas a conta segue */
 .nomesegue p{
     margin-bottom: 6px;
+}
+
+.nomesegue{
+    display: flex;
+    flex-direction: column;
 }
 
 /* define a fonte para 14px */
@@ -510,6 +543,7 @@ button:hover{
 
     .conteudos{
         width: 100vw;
+        height: 100vh;
     }
 
     .conteudo{
